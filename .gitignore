@@ -1,3 +1,6 @@
+# ignore the appendix, which is for local work
+appendix/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

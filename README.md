@@ -1,2 +1,3 @@
 # funsql-examples
-example notebooks to demonstrate working with the FunSQL library
+
+Example notebooks/scripts to demonstrate working with the [FunSQL library](https://github.com/ananis25/funsql-python). 

@@ -5,10 +5,6 @@ Multiple projects provide a `metrics layer` against the database, for ex - [dbt 
 
 ### Notes
 
-<details>
-
-<summary>Click to expand</summary>
-
 The product webpages use the term `Headless BI` or `metrics layer`, both not super informative.  I'd expect the pitch roughly goes like this. 
 
 **The typical analytics pipeline looks like this.**
@@ -74,7 +70,6 @@ The query now look more comprehensible and more approachable to a business user.
 
 So, the `metrics layer` concept is clearly more work and YMMV in the utility you get from it. It does introduce discipline to the analytics workflow and better... umm, separation of concerns between engineering and analysts.  Anyway, the concept make for a good primitive when setting up an analytics workflow from scratch. 
 
-</details>
 
 <br>
 

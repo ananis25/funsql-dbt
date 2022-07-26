@@ -33,7 +33,7 @@ class Metric:
 
 
 @dataclass
-class Grain:
+class Cube:
     grain: str
     table: Optional[str]
     derived_table: Optional[str]

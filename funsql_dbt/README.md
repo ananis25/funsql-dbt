@@ -2,7 +2,12 @@
 
 The FunSQL library helps compose SQL queries, so a DBT like framework can be built on top of it. 
 
-It isn't particularly desirable though. DBT fits the interactive workflow - models are SQL queries introduced one at a time, with some Jinja markup/macros.  That is a more declarative approach than combining python functions.  However, writing `transform` steps using a python DSL does let us construct queries dynamically.  You can choose to only materialize tables that have say multiple children, share logic/parameters more easily, etc. 
+**It isn't particularly desirable!** DBT fits the interactive workflow - models are SQL queries introduced one at a time, with some Jinja markup/macros.  That is a more declarative approach than combining python functions.  
+
+However, writing `transform` steps using a python DSL affords some flexibility.  
+
+* Construct queries dynamically - you can use regular python control flow, choose to only materialize tables that have say, multiple children, share logic/parameters more easily, etc. 
+* Using alternate orchestration engines like Prefect/Dagster - you can still get workflow semantics for the whole process, like error recovery and retries, but get more control over the execution. 
 
 I tried to reproduce the `jaffle shop` [example](https://github.com/dbt-labs/jaffle_shop) from the DBT tutorial.  We use a sqlite database file, and no other dependencies.  Though it should be easy to use a workflow tool like `Prefect` to make table materializations as discrete tasks, and get caching/scheduling and other good stuff. 
 

@@ -6,4 +6,4 @@ Example notebooks/scripts to demonstrate working with the [FunSQL library](https
 
 * `funsql-metrics`: A LookML like application that lets you specify dimensions/metrics against a database schema, and then make queries against it. FunSQL can be used as a query generator. [INCOMPLETE]
 
-* `funsql-dbt`: DBT like script to go over a dependency tree of query views/tables, and materialize them to a data warehouse. 
+* `funsql-dbt`: DBT like script to go over a dependency tree of query views/tables, and materialize them to a data warehouse. Using FunSQL lets us compose query fragments without a templating language like Jinja. 

@@ -1,6 +1,6 @@
 # funsql-dbt
 
-This folder hosts a DBT like script to go over a dependency tree of query views/tables, and materialize them to a data warehouse.  The FunSQL library helps compose SQL queries, we could do away with a templating language like Jinja. 
+This folder hosts a DBT like script to go over a dependency tree of query views/tables, and materialize them to a data warehouse.  The [FunSQL library](https://github.com/ananis25/funsql-python) helps compose SQL queries, we could do away with a templating language like Jinja. 
 
 **It isn't particularly desirable!** DBT fits the interactive workflow - models are SQL queries introduced one at a time, with some Jinja markup/macros.  That is a more declarative approach than combining python functions.  
 
